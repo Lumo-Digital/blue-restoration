@@ -5,8 +5,7 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import Eyebrow from "@/components/Eyebrow";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiaGJhcmF2YWxsZSIsImEiOiJjbTRqNHI1cHAwYTU1MmtxNTh5d3prZGduIn0.Bl_9OB43trwN0SuMvZc3RA";
+mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_API_KEY!;
 
 const COORDINATES = {
   lng: -80.32869885969049,
